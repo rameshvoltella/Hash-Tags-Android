@@ -1,7 +1,7 @@
 Hash-Tags-Android
 =================
 
-This is a sample of handling hash tags that contain in a text,the tags are clickable and user can do specifc actions for the corresponding hash tags.
+This is a sample of handling hash tags that contain in a text,the tags are clickable and user can do specifc actions for the corresponding hash tags.In this example we can change color and also can give underline to hash tags  according to the usecase.
 Some Screenshots are given below
 <p><b>1.Screen one </b></p>
 <p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-05.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-05.png" alt="Screenshot one" style="max-width:100%;"></a></p>
