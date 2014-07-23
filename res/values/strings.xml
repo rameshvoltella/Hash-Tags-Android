@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HashTagAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="test_word">A hashtag is simply a way for people to search for tweets that have a common topic. For example, if you search on #Gravity (or #gravity or #GraVItY, because it\'s not case-sensitive), youll get a list of tweets related to the movie. What you wont get are tweets that say "Who discovered gravity?" because "gravity" isnt preceded by the hashtag.\n Some Examples #android #google #stackoverflow #fifa #me #world these are all examples of hash tag</string>
+
+</resources>
