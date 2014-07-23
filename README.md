@@ -14,5 +14,13 @@ Some Screenshots are given below
 <p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-27.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-27.png" alt="Screenshot With UnderLine" style="max-width:100%;"></a></p>
 
 
+<p><b>3.HashTag clicked </b></p>
+<p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-22-32-27.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-22-32-27.png" alt="Hast Tag Clicked" style="max-width:100%;"></a></p>
+
+
+<p><b>3.HashTag in a ListView </b></p>
+<p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-23-06-04.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-23-06-04.png" alt="Hast Tag in ListView" style="max-width:100%;"></a></p>
+
+
 
 
