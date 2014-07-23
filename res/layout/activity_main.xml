@@ -9,66 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/hashtag_textview"
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="Activity Example"
+        android:onClick="exampleActivity" />
 
-    <!--
-         <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/hashtag_textview_two"
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    -->
-
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="set underline" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_weight="4"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/red"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FF0000"
-            android:onClick="red" />
-
-        <Button
-            android:id="@+id/blue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#5BCFF2"
-            android:onClick="blue" />
-
-        <Button
-            android:id="@+id/green"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#014a01"
-            android:onClick="green" />
-
-        <Button
-            android:id="@+id/yellow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFF00"
-            android:onClick="yellow" />
-    </LinearLayout>
-/
+        android:text="Listview Example"
+        android:onClick="exampleListview" />
 
 </LinearLayout>
