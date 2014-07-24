@@ -19,7 +19,7 @@ Hash-Tags: how to use
      mHashTagTextView = (TextView) findViewById(R.id.hashtag_textview);
      mHashTagTextView.setMovementMethod(LinkMovementMethod.getInstance());
      	mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
-testText, this, mhyperlickStatus, hashtagColor),
+testText, this, mHyperlinkStatus, hashTagColor),
 BufferType.SPANNABLE);
 ```
 
