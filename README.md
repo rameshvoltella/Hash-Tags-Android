@@ -10,7 +10,7 @@ Hash-Tags: how to use
 1. Set Hash Tag Handler
   
     ```java
-       TagSelectingTextview mTagSelectingTextview=new TagSelectingTextview()
+       TagSelectingTextview mTagSelectingTextview=new TagSelectingTextview();
 ```
 
 2. Set data containing hash tag to the text view as following
