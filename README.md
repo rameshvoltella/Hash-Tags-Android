@@ -44,6 +44,9 @@ Some Screenshots are given below
 <p><b>5.HashTag in a ListView </b></p>
 <p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-23-06-04.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-23-06-04.png" alt="Hast Tag in ListView" style="max-width:100%;"></a></p>
 
+
+## VIDEO ([SAMPLE](https://www.youtube.com/watch?v=Bp7aiqxKhv0&feature=youtu.be)) 
+
 ## License
 
     The MIT License (MIT)
