@@ -9,6 +9,7 @@ package com.hashtagandroid;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.View;
@@ -28,7 +29,7 @@ public class HashTagActivity extends Activity implements TagClick {
 
 	String hastTagColorBlue = "#5BCFF2", hastTagColorRed = "#FF0000",
 			hastTagColorYellow = "#FFFF00", hastTagColorGreen = "#014a01",
-			testText, currentHashTagColor;
+					testText, currentHashTagColor;
 
 	public static int hashTagHyperLinkEnabled = 1;
 	public static int hashTagHyperLinkDisabled = 0;
@@ -48,6 +49,9 @@ public class HashTagActivity extends Activity implements TagClick {
 		CheckBox chkIos = (CheckBox) findViewById(R.id.checkBox1);
 
 		testText = getResources().getString(R.string.test_word);
+		
+//        testText="<div><font face=\"Arial, Verdana\"><span style=\"font-size: 13.3333330154419px;\">What Is #Agile?</span></font></div><div><font face=\"Arial, Verdana\"><span style=\"font-size: 13.3333330154419px;\"><br></span></font></div><div><font face=\"Arial, Verdana\"><span style=\"font-size: 13.3333330154419px;\">The Agile movement proposes alternatives to traditional project management. #Agile approaches are typically used in software development to help businesses respond to unpredictability.</span>";
+
 
 		mHashTagTextView.setMovementMethod(LinkMovementMethod.getInstance());
 
@@ -102,7 +106,7 @@ public class HashTagActivity extends Activity implements TagClick {
 	}
 
 	@Override
-	public void clickedTag(String tag) {
+	public void clickedTag(CharSequence tag) {
 		// TODO Auto-generated method stub
 
 		Toast.makeText(getApplicationContext(),
@@ -121,7 +125,7 @@ public class HashTagActivity extends Activity implements TagClick {
 		 * Main Section where we set the hash tag for the textview
 		 */
 		mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
-				testText, this, mhyperlickStatus, hashtagColor),
+				Html.fromHtml(testText).toString(), this, mhyperlickStatus, hashtagColor),
 				BufferType.SPANNABLE);
 	}
 

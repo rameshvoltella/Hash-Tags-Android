@@ -19,6 +19,9 @@ import android.widget.TextView;
 
 import com.hashtagandroid.interfaces.TagClick;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class TagSelectingTextview {
 
 	String mhastTagColor;
@@ -34,54 +37,65 @@ public class TagSelectingTextview {
 
 		this.mTagClick = TagClick;
 
+        // Pattern for getting the hash tags from a string
+
+
+        Pattern hashTagsPattern = Pattern.compile("(#[a-zA-Z0-9_-]+)");
+
 		SpannableStringBuilder string = new SpannableStringBuilder(nTagString);
 
-		int start = -1;
-		for (int i = 0; i < nTagString.length(); i++) {
-			if (nTagString.charAt(i) == '#') {
-				start = i;
-			} else if (nTagString.charAt(i) == ' '
-					|| (i == nTagString.length() - 1 && start != -1)) {
-				if (start != -1) {
-					if (i == nTagString.length() - 1) {
-						i++; // case for if hash is last word and there is no
-								// space after word
-					}
+        CharSequence spanText;
+        int start;
+        int end;
 
-					final String tag = nTagString.substring(start, i);
-					string.setSpan(new ClickableSpan() {
+        // Matching the pattern with the existing string
 
-						@Override
-						public void onClick(View widget) {
-							
-							// Click on each tag will get here
-							
-							Log.d("TAg--HAsh", String.format("Clicked", tag));
-							mTagClick.clickedTag(tag);
-						}
+        Matcher m = hashTagsPattern.matcher(nTagString);
 
-						@Override
-						public void updateDrawState(TextPaint ds) {
-							
-							// color for the hash tag
-							ds.setColor(Color.parseColor(mhastTagColor));
-							
-							if (mHypeLinkEnabled == 0) {
-								ds.setUnderlineText(false);// Disable the
-															// underline for
-															// hash Tags.
-							} else {
-								ds.setUnderlineText(true);// Enables the
-															// underline for
-															// hash Tags.
+        while (m.find()) {
 
-							}
-						}
-					}, start, i, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-					start = -1;
-				}
-			}
-		}
+            start = m.start();
+             end = m.end();
+
+            spanText = nTagString.subSequence(start, end);
+
+
+            final CharSequence mLastTextSpan = spanText;
+            
+            string.setSpan(new ClickableSpan() {
+
+                @Override
+                public void onClick(View widget) {
+
+                    // Click on each tag will get here
+
+                    Log.d("TAg--HAsh", String.format("Clicked", mLastTextSpan));
+                    mTagClick.clickedTag(mLastTextSpan);
+                }
+
+                @Override
+                public void updateDrawState(TextPaint ds) {
+
+                    // color for the hash tag
+                    ds.setColor(Color.parseColor(mhastTagColor));
+
+                    if (mHypeLinkEnabled == 0) {
+                        ds.setUnderlineText(false);// Disable the
+                        // underline for
+                        // hash Tags.
+                    } else {
+                        ds.setUnderlineText(true);// Enables the
+                        // underline for
+                        // hash Tags.
+
+                    }
+                }
+            }, start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+
+        }
+
+
 
 		return string;
 	}

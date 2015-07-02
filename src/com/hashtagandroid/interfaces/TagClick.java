@@ -7,5 +7,5 @@ package com.hashtagandroid.interfaces;
 
 public interface TagClick {
 
-	public void clickedTag(String tag);
+	public void clickedTag(CharSequence tag);
 }

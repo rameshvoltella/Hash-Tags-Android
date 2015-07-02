@@ -95,7 +95,7 @@ public class HashTagAdaptor extends BaseAdapter implements TagClick {
 	}
 
 	@Override
-	public void clickedTag(String tag) {
+	public void clickedTag(CharSequence tag) {
 		// TODO Auto-generated method stub
 		Toast.makeText(activity, "Clicked on " + tag, 1).show();
 	}
