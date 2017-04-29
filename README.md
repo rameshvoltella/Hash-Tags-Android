@@ -14,17 +14,9 @@ Hash-Tags: how to use
 ```
 
 
-3. Set data containing hash tag to the text view as following
- 
-  ```java
 
-      mHashTagTextView = (TextView) findViewById(R.id.hashtag_textview);
-     mHashTagTextView.setMovementMethod(LinkMovementMethod.getInstance());
-     	mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
-     testText, this, mHyperlinkStatus, hashTagColor),
-     BufferType.SPANNABLE)
 
-```
+
 2. For setting data form html content
  
   ```java
