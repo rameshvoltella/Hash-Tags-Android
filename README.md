@@ -13,19 +13,8 @@ Hash-Tags: how to use
        TagSelectingTextview mTagSelectingTextview=new TagSelectingTextview();
 ```
 
+
 2. Set data containing hash tag to the text view as following
-  
-  ```java
-     
-     mHashTagTextView = (TextView) findViewById(R.id.hashtag_textview);
-     mHashTagTextView.setMovementMethod(LinkMovementMethod.getInstance());
-     	mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
-testText, this, mHyperlinkStatus, hashTagColor),
-BufferType.SPANNABLE);
-
-```
-
-3. For setting data form html content
  
   ```java
 
