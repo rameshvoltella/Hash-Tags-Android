@@ -29,9 +29,11 @@ BufferType.SPANNABLE);
  
   ```java
 
-      mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
-                        Html.fromHtml(testText).toString(), this, mhyperlickStatus, hashtagColor),
-				BufferType.SPANNABLE);
+      mHashTagTextView = (TextView) findViewById(R.id.hashtag_textview);
+     mHashTagTextView.setMovementMethod(LinkMovementMethod.getInstance());
+     	mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
+     testText, this, mHyperlinkStatus, hashTagColor),
+     BufferType.SPANNABLE)
 
 ```
 
