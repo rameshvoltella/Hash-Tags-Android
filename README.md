@@ -33,31 +33,15 @@ BufferType.SPANNABLE);
 				BufferType.SPANNABLE);
 
 ```				
-				
 
-    
-   
-Some Screenshots are given below
-<p><b>1.Screen one </b></p>
-<p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-05.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-05.png" alt="Screenshot one" style="max-width:100%;"></a></p>
-
-<p><b>2.HashTag with different color </b></p>
-<p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-13.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-13.png" alt="Screenshot two" style="max-width:100%;"></a></p>
-
-
-<p><b>3.HashTag like a hyperLink </b></p>
-<p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-27.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-20-41-27.png" alt="Screenshot With UnderLine" style="max-width:100%;"></a></p>
-
-
-<p><b>4.HashTag clicked </b></p>
-<p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-22-32-27.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-22-32-27.png" alt="Hast Tag Clicked" style="max-width:100%;"></a></p>
-
-
-<p><b>5.HashTag in a ListView </b></p>
-<p><a href="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-23-06-04.png" target="_blank"><img src="https://raw.githubusercontent.com/rameshvoltella/Hash-Tags-Android/master/Screenshot_2014-07-23-23-06-04.png" alt="Hast Tag in ListView" style="max-width:100%;"></a></p>
 
 
 ## VIDEO ([SAMPLE](https://www.youtube.com/watch?v=Bp7aiqxKhv0&feature=youtu.be)) 
+
+
+
+
+
 
 ## License
 
