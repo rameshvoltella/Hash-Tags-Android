@@ -25,6 +25,15 @@ Hash-Tags: how to use
      BufferType.SPANNABLE)
 
 ```
+2. For setting data form html content
+ 
+  ```java
+
+      mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
+                        Html.fromHtml(testText).toString(), this, mhyperlickStatus, hashtagColor),
+				BufferType.SPANNABLE);
+
+```
 
 
 3. For setting data form html content
