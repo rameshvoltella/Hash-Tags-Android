@@ -13,7 +13,14 @@ Hash-Tags: how to use
        TagSelectingTextview mTagSelectingTextview=new TagSelectingTextview();
 ```
 
+1. Set Hash Tag Handler
+ 
+  ```java
 
+        TagSelectingTextview mTagSelectingTextview=new TagSelectingTextview();
+        
+
+```
 
 
 
