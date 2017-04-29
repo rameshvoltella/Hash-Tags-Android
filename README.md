@@ -14,7 +14,7 @@ Hash-Tags: how to use
 ```
 
 
-2. Set data containing hash tag to the text view as following
+2. Set Hash Tag Handler
  
   ```java
 
