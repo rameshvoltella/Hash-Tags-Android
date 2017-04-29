@@ -21,13 +21,17 @@ Hash-Tags: how to use
      	mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
 testText, this, mHyperlinkStatus, hashTagColor),
 BufferType.SPANNABLE);
+
 ```
+
 3. For setting data form html content
  
     ```java
-  mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
+
+      mHashTagTextView.setText(mTagSelectingTextview.addClickablePart(
                         Html.fromHtml(testText).toString(), this, mhyperlickStatus, hashtagColor),
 				BufferType.SPANNABLE);
+
 ```				
 				
 
